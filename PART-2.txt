@@ -1,0 +1,65 @@
+--------------JENKINS-PART=2-----------------
+
+*job
+*upstrem
+*downstrem
+
+*plugins
+	Build Pipeline 
+	delivery pipeline
+	build mointer view
+	deploy to container
+	maven integration
+	sonarqube
+	roles
+	backup
+	ssh 
+	blue ocean
+https://plugins.jenkins.io/test-results-analyzer/
+
+*cd /var/lib/jenkins/workspace
+*cd /etc/default/ - vi jenkins
+*systemctl edit jenkins --full
+*cd /usr/lib/systemd/system/=vi jenkins.service
+
+jenkins 8080 - 9090
+
+Is that possible we will get notification from group ( DL Distribution List )
+
+
+
+
+
+
+
+
+
+http://15.228.163.161:8080//job/1st%20job%20dev/build?token=12345
+http://3.86.116.207:8080//job/dev%20job%201st/build?token=12345
+
+
+http://100.24.38.60:8080/job/dev-%20env/build?token=12345
+
+
+
+
+
+
+
+http://34.222.152.6:8080//job/1st%20job%20dev/build?token=12345
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,119 @@
+--------------------JENKINS-PART=3----------------
+
+====local host=====
+
+ubuntu
+ls -lrta
+cd .ssh
+ls -lrta
+touch id_rsa.pub
+touch id_rsa
+cp authorized_keys id_rsa.pub
+vi id_rsa
+chmod 400 authorized_keys id_rsa.pub id_rsa
+ssh localhost
+history
+
+====default configuration file=====
+
+cd /etc/default/jenkins
+
+====job files storied area====
+
+cd /var/lib/jenkins/workspace
+
+
+
+===local host======
+
+ubuntu
+ll
+cd .ssh
+touch id_rsa.pub
+touch id_rsa
+cp authorized id_rsa.pub
+vi id_rsa[paste here pem file]
+chmod 400
+
+0-normal user
+0-root user
+0-others
+
+1 exe
+2 read
+4 wright
+
+
+
+how to connect a slave
+
+ubuntu@ip-172-31-43-157:~/worker$ pwd
+/home/ubuntu/worker
+sudo -i
+apt update
+apt install openjdk-11-jdk -y
+
+login jenkins
+manage jenkins
+manage nodes and clouds
+
+
+*landing path /var/lib/jenkins/worspace
+*default path /etc/default/-vi jenkins
+*ssh localhost
+*master and slave connection
+
+master
+	-jenkins
+	-java
+slave
+	-java
+	-landing path
+
+
+*master & slave
+	*path creation
+*local host
+*tomcat installations
+
+PART-3
+
+LOCAL HOST -
+
+
+MASTER & SLAVE
+EMAIL NOTIFICATION
+TOMCAT APPLICATION MIDDLEWARE
+
+PART-4
+TOMCAT AUTOMATION DEPLOYMENT
+ROLES
+BACKUP 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

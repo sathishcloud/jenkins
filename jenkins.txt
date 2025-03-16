@@ -1,0 +1,51 @@
+Life cycle of jenkins or Maven
+
+compile
+code review
+unit Test
+Metrics check
+package
+deploye war
+
+pom.xml ( it important to mavan project)
+
+its a programmer object modle
+this is used for mavan for configuration information installation information
+
+https://github.com/htshshrm2/devops
+
+https://github.com/htshshrm2/devops.git
+
+compileaddressbook---compile--
+codereview -- -P metrics pmd:pmd-- reportfile (.xml)--- pmd plugin to understand .xml report--workspace/target/pmd.xml
+unit test--- test---junit---target/surefire-reports/*.xml
+metrics------cobertura:cobertura -D cobertura.report.format=xml----cobertura--**/target/site/cobertura/coverage.xml
+package---package---package--target/packaage.war
+deploye ----package---deploye to container--- */**.war---
+
+Tomcat roles and user:
+
+ <role rolename="manager-gui"/>
+ <role rolename="manager-script"/>
+ <user username="admin" password="admin" roles="manager-gui, manager-script"/>
+
+Jenkins plugins:
+
+Build Pipeline
+delivery pipeline
+build mointer tool
+email extension 
+
+
+Gmail
+------------
+smtp.gmail.com
+465
+ssl enable
+
+allow less secure app -on
+
+
+Docker:
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04

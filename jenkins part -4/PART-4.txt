@@ -1,0 +1,183 @@
+#manually tomcat installation 
+		-deploy normal sample war file
+		-webapps [paste sample .war file] https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/
+
+
+
+#jenkins installation
+
+
+#
+
+
+
+
+#TOMCAT 
+	-cd /opt = downlode tomcat this path
+	-wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.69/bin/apache-tomcat-9.0.69.tar.gz
+	-ls
+	-apache-tomcat-9.0.69.tar.gz
+	-tar -xvzf apache-tomcat-9.0.69.tar.gz
+	-ls apache-tomcat-9.0.69
+	-cd apache-tomcat-9.0.69
+	-cd bin
+	-./startup.sh
+	-
+
+
+manager-gui - allows access to the HTML GUI and the status pages
+manager-script - allows access to the text interface and the status pages
+manager-jmx - allows access to the JMX proxy and the status pages
+manager-status - allows access to the status pages only
+
+<role rolename="manager-gui"/>
+<role rolename="manager-script"/>
+<role rolename="manager-jmx"/>
+<role rolename="manager-status"/>
+
+<user username="admin" password="admin" roles="manager-gui,manager-script,manager-jmx,manager-status"/>
+
+<user username="sai" password="saiprasad" roles="manager-gui"/>
+
+
+
+
+	
+	<role rolename="manager-gui"/>
+	<role rolename="manager-script"/>
+	<role rolename="manager-jmx"/>
+	<role rolename="manager-status"/>
+	<user username="admin" password="admin" roles="manager-gui,manager-script,manager-jmx,manager-status"/>
+	<user username="deployer" password="deployer" roles="manager-script"/>
+
+
+
+=====
+
+Tomcat roles and user:
+
+ 
+
+
+#server launch
+	- sudo -i
+	-apt update
+	-apt install openjdk-11-jdk -y
+	-[install jenkins]
+	-cd /etc/default 
+	-vi jenkins [change the port num ]
+	-service jenkins restart
+	-
+      -
+
+#plugin
+	- deploy to container
+	  https://plugins.jenkins.io/deploy
+
+
+
+
+
+============================================
+#go and check configure global security check [ role based statergy ]
+
+plugin -
+
+***Role based authorised startegy***
+
+
+What is the security policy jenkins ?
+
+step 001:-
+---------------
+
+configure global security --> logged-in users can do anything
+
+manage plugins --> install plugind [ role-based authorization strategy ]
+
+
+configure global security --> give [ role-based authorization strategy ]
+---- security ----
+new added
+
+manage and assign roles
+
+step 002:-
+---------------
+
+manage jenkins --> manage users
+
+create any  two users
+
+manage roles --> 
+
+global roles
+	root / company / admin
+item role
+	sub users / employee
+
+create global role
+	employee --> read permission only
+create item role
+role to add
+	role name
+pattern
+	regular expressions https://regex101.com
+	cron regex dev.*
+
+
+
+
+
+
+{ stages 
+Declarative checkout scm 
+
+checkout
+
+maven build 
+
+maven digital build
+
+maven cs build
+
+maven eureka build
+
+maven java 21 build
+
+react build 
+
+grade build
+
+code quality analysis
+
+code qualit gating
+
+deploy notify
+
+container build
+
+container upload
+
+svn file copy
+
+manifest upload
+
+pod_deploy 
+
+declarative post actions
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
